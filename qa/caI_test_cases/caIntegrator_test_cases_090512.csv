@@ -1,0 +1,191 @@
+,Test case,Result,Comments,clinical file,group file,mapping file,other/link/annotation/control file,platform,genomic type,company,configuration,data files for caArray
+Expression data deployment tests,,,,,,,,,,,,
+1,Deploy a study with HG_U95Av2 parsed data.,Failed,See CAINT-1210,L:\QA\schaefer\caArrayMigrationFiles\EXP-602.sdrf_clinical_b.csv,,L:\QA\schaefer\caArrayMigrationFiles\EXP-602.sdrf_mapping_c.csv,,L:\QA\CAI2\Array_Designs\Gene_Expression\Affymetrix\HG_U95Av2.na27.annot.CSV,expression,Affymetrix ,parsed,L:\QA\CAI2\CAI_Test_Experiments\caArray_EXP-1_files.zip
+2,Deploy a study with HG_U95Av2 supplemental data.,Passed,,H:\egeod29315_clinical,,H:\egeod29315_mapping,,L:\QA\CAI2\Array_Designs\Gene_Expression\Affymetrix\HG_U95Av2.na27.annot.CSV,expression,Affymetrix ,supplemental single-sample-per-file,"H:\E-GEOD-29315_b.sdrf
+H:\E-GEOD-29315_b.idf"
+3,Deploy a study with parsed Affy HG-U133A_Plus_2 data.,Passed,"HG18 (L:\QA\CAI2\Array_Designs\Gene_Expression\Affymetrix\HG-U133_Plus_2.na26.annot.csv) tested on QA, HG19 (L:\QA\CAI2\Array_Designs\Gene_Expression\Affymetrix\HG-U133_Plus_2.na31.annot.csv) tested on local linux.",H:\fine37_EXP-23.sdrf_clinical.csv,,H:\fine37_EXP-23.sdrf_mapping.csv,,HG-U133_Plus_2,expression,Affymetrix ,parsed,H:\My Documents\Downloads\caArray_fine-00037_files(4)
+4,Deploy a study with supplemental Affy HG-U133A data.,Passed,,H:\E-GEOD-25055_c.sdrf_clinical.csv,,H:\E-GEOD-25055_c.sdrf_mapping.csv,,L:\QA\CAI2\Array_Designs\Gene_Expression\Affymetrix\HG-U133A.na27.annot.csv,expression,Affymetrix ,supplemental single-sample-per-file,"H:\E-GEOD-25055_c.idf.txt
+H:\E-GEOD-25055_c.sdrf.txt
+H:\E-GEOD-25055.processed.1.zip"
+5,Deploy a study with Agilent 4x44k supplemental data.,Passed,,"L:\NCICB\QA\schaefer\EGEOD22226files\E-GEOD-22226.sdrf_clinical_e
+",L:\NCICB\QA\schaefer\EGEOD22226files\E-GEOD-22226.sdrf_clinical_e_group,L:\NCICB\QA\schaefer\EGEOD22226files\EXP-20_mapping_d,,4x44K (L:\QA\schaefer\Agilent44kFiles\ExternalFullGEML\014850_D_F_20110819\014850_D_F_20110819_modified.xml),expression,Agilent,,"L:\NCICB\QA\schaefer\EGEOD22226files\E-GEOD-22226_A-AGIL-28_c.sdrf
+L:\NCICB\QA\schaefer\EGEOD22226files\E-GEOD-22226_A-AGIL-28_c.idf
+L:\NCICB\QA\schaefer\EGEOD22226files\E-GEOD-22226.processed.1
+L:\NCICB\QA\schaefer\EGEOD22226files\E-GEOD-22226.processed.2"
+6,Deploy a study with Agilent 4x44k supplemental data.,Passed,,"L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_clinical_annotation
+
+",L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_clinical_annotation_group_2,"L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_mapping_10samples
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_mapping_13samples",,1x44K (L:\QA\schaefer\Agilent1x44kFiles\012391_hs1_1328280333735\ExternalFullGEML\012391_D_F_20120130_modified.xml),expression,Agilent,,"L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_10samples.zip
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_10samples.sdrf
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_10samples.idf
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_plus3samples.zip
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_plus3samples.sdrf
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_plus3samples.idf
+
+"
+Copy Number data deployment tests,,,,,,,,,,,,
+7,Deploy a study with multi-hybridization nederlands parsed agilent copy number data using caCGHcall.,Failed,Inconsistent errors were seen but was able to deploy data. See CAINT-1211.,H:\nederlands_clinical_9subjects5columns.csv,,L:\QA\CAI2\Studies\Netherlands_Cairo\Genomic\Parsed\Data_Mapping_Parsed_3samples.csv,ncias-s412.nci.nih.gov:8080/wsrf/services/cagrid/CaCGHcall,L:\QA\CAI2\Array_Designs\Copy_Number\Agilent\022522_D_F_20091016_c.xml,copy number ,Agilent ,parsed multi-hybridization,"L:\QA\CAI2\Studies\Netherlands_Cairo\Genomic\caArray\MultiHybFiles\Netherlands_Cairo_Parsed_3samples.zip
+L:\NCICB\QA\CAI2\Studies\Netherlands_Cairo\Genomic\caArray\SingleHybFiles\Netherlands_Cairo_3samples_SingleHyb.zip"
+8,Deploy a study with single-hybridization nederlands parsed agilent copy number data using caCGHcall.,Failed,Inconsistent errors were seen but was able to deploy data. See CAINT-1211.,H:\nederlands_clinical_9subjects5columns.csv,,L:\QA\CAI2\Studies\Netherlands_Cairo\Genomic\Parsed\Data_Mapping_Parsed_3samples.csv,bioconductor.nci.nih.gov:8080/wsrf/services/cagrid/CaCGHcall,L:\QA\CAI2\Array_Designs\Copy_Number\Agilent\022522_D_F_20091016_c.xml,copy number ,Agilent ,parsed single-hybridization,"L:\QA\CAI2\Studies\Netherlands_Cairo\Genomic\caArray\MultiHybFiles\Netherlands_Cairo_Parsed_3samples.zip
+L:\NCICB\QA\CAI2\Studies\Netherlands_Cairo\Genomic\caArray\SingleHybFiles\Netherlands_Cairo_3samples_SingleHyb.zip"
+9,Deploy a study with Affy 50k mapping data.,Passed,,L:\QA\schaefer\caArrayMigrationFiles\remb_031612_clinical_e.csv,,L:\QA\schaefer\caArrayMigrationFiles\remb_031612_mapping_e.csv,,"L:\QA\CAI2\Array_Designs\Copy_Number\Affymetrix\Mapping50K_Hind240.na30.annot.csv\Mapping50K_Hind240.na30.annot.csv
+L:\QA\CAI2\Array_Designs\Copy_Number\Affymetrix\Mapping50K_Xba240.na30.annot.csv\Mapping50K_Xba240.na30.annot.csv",copy number ,Affymetrix ,,E:\RetiredCaArrayFiles\S1002\caArray_EXP-19_files(2).zip
+10,Deploy a study with 250k mapping data.,Passed,,H:\target_081811_clinical_h.csv,,H:\target_081811_mapping_h.csv,,"L:\QA\CAI2\Array_Designs\Copy_Number\Affymetrix\Mapping250K_Nsp.na30.annot.csv\Mapping250K_Nsp.na30.annot.csv
+L:\QA\CAI2\Array_Designs\Copy_Number\Affymetrix\Mapping250K_Sty.na30.annot.csv\Mapping250K_Sty.na30.annot.csv",copy number ,Affymetrix ,,"L:\QA\schaefer\TARGET_CNCHP_165.112.132.165\20110812_113934_CNCHP.zip
+L:\QA\schaefer\TARGET_CNCHP_165.112.132.165\20110816_214238_CNCHP.zip"
+11,Deploy a study with Agilent 2x415k data.,Passed,,L:\QA\schaefer\TCGA_LUSC\Clinical\BCR\TCGALUSC_EXP-11_clinical_f.csv,,L:\QA\schaefer\TCGA_LUSC\Clinical\BCR\TCGALUSC_EXP-11_mapping_f.csv,,HG-CGH-2x415K (L:\caIntegrator2\caIntegrator2_data\TCGA-OV\GPL13346_family_all_reporters_tdt.adf),copy number ,Agilent ,,"Q:\Schaefer_Qdrive\e3362345-61bc-4e07-ba2f-4e67ffbabaf9\Copy_Number_Results\HMS__HG-CGH-415K_G4124A\Level_2
+H:\EXP-11.magetab"
+Both genomic data type deployment tests,,,,,,,,,,,,
+12,Deploy a study with five groups and three genomic data sources.,Passed,,"H:\TCGA_GBM_10subjects_patient_b.csv
+H:\TCGA_GBM_10subjects_drug_b.csv
+H:\TCGA_GBM_10subjects_examination_b.csv
+H:\TCGA_GBM_10subjects_radiation_b.csv
+H:\TCGA_GBM_10subjects_surgery.csv
+","L:\caIntegrator2\caIntegrator2_data\TCGA-clinical\GBM\Clinical\TCGAGBM_062011\tcgagbm_patient_group.csv
+L:\caIntegrator2\caIntegrator2_data\TCGA-clinical\GBM\Clinical\TCGAGBM_062011\tcgagbm_drug_group_b.csv
+L:\caIntegrator2\caIntegrator2_data\TCGA-clinical\GBM\Clinical\TCGAGBM_062011\tcgagbm_examination_group.csv
+L:\caIntegrator2\caIntegrator2_data\TCGA-clinical\GBM\Clinical\TCGAGBM_062011\tcgagbm_radiation_group_b.csv
+L:\caIntegrator2\caIntegrator2_data\TCGA-clinical\GBM\Clinical\TCGAGBM_062011\tcgagbm_surgery_group_b.csv",,,,,,,
+,,,,,,H:\socci-00046_mapping_g_10samples.csv,,L:\caIntegrator2\caIntegrator2_data\TCGA_GBM_public_Agilent\mskcc.org_TCGA_HG-CGH-244A_v081008.ADF,copy number ,Agilent,supplemental multi-sample-per-file,H:\My Documents\Downloads\caArray_EXP-16_files.zip
+,,,,,,H:\tcga_gbm_mapping_062311_10subjects.csv,,HT_HG-U133A,expression,Affymetrix ,parsed,"H:\meyer-00180_10subjects.idf
+H:\meyer-00180_10subjects.sdrf
+H:\My Documents\Downloads\caArray_meyer-00180_files(2).zip"
+,,,,,,H:\tcga_gbm_agilent_mapping_topal47_10subjects.csv,,L:\QA\CAI2\Array_Designs\Gene_Expression\Agilent\AgilentG4502A_07_singleADF.adf,expression,Agilent,supplemental single-sample-per-file,"H:\topal-00047_10subjects.idf
+H:\topal-00047_10subjects.sdrf
+H:\My Documents\Downloads\caArray_topal-00047_files.zip"
+,,,,,,H:\Agilent_244A_copy_number_mapping_Kuche_00038_10subjects.csv,,,,,,
+Expression data with calculated results,,,,,,,,,,,,
+13,Deploy a study with technical replictes,Failed,See CAINT-1212,H:\meyr180techrepexp26_clinical.csv,,H:\meyr180techrepexp26_mapping.csv,H:\cb69c62a-fe0c-4868-9af8-170150fc0e10.tar\cb69c62a-fe0c-4868-9af8-170150fc0e10\Expression-Genes\BI__HT_HG-U133A\Level_2,HT_HG-U133A,expression,Affymetrix ,parsed,"H:\meyer-00180_tcga060137_c.idf
+H:\meyer-00180_tcga060137_c.sdrf
+H:\My Documents\Downloads\caArray_meyer-00180_files.zip"
+14,Deploy a study with controls for fold change calculation,Passed,,H:\TCGA_GBM_10subjects_patient_b.csv,L:\caIntegrator2\caIntegrator2_data\TCGA-clinical\GBM\Clinical\TCGAGBM_062011\tcgagbm_patient_group.csv,H:\tcga_gbm_mapping_062311_10subjects.csv,H:\tcga_gbm_mapping_062311_3controls,HT_HG-U133A,expression,Affymetrix ,parsed,"H:\meyer-00180_10subjects.idf
+H:\meyer-00180_10subjects.sdrf
+H:\My Documents\Downloads\caArray_meyer-00180_files(2).zip"
+Auto-Refresh tests,,,,,,,,,,,,
+15,"Deploy a non-SSO study with caArray data, update the caArray data, and remap the study",Passed,,"L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_clinical_annotation
+
+",L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_clinical_annotation_group_2,"L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_mapping_10samples
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_mapping_13samples",,1x44K (L:\QA\schaefer\Agilent1x44kFiles\012391_hs1_1328280333735\ExternalFullGEML\012391_D_F_20120130_modified.xml),expression,Agilent,,"L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_10samples.zip
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_10samples.sdrf
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_10samples.idf
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_plus3samples.zip
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_plus3samples.sdrf
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_plus3samples.idf
+
+"
+16,"Deploy an SSO study with caArray data, update the caArray data, and remap the study",Passed,,"L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_clinical_annotation
+
+",L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_clinical_annotation_group_2,"L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_mapping_10samples
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_mapping_13samples",,1x44K (L:\QA\schaefer\Agilent1x44kFiles\012391_hs1_1328280333735\ExternalFullGEML\012391_D_F_20120130_modified.xml),expression,Agilent,,"L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_10samples.zip
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_10samples.sdrf
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_10samples.idf
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_plus3samples.zip
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_plus3samples.sdrf
+L:\NCICB\caIntegrator2\TRANSCEND_UAT_files\ispy1_agilent_plus3samples.idf
+
+"
+Platform tests,,,,,,,,,,,,
+17,Load all platforms listed above,Passed,,,,,,,,,,
+18,"Delete a platform
+",Passed,,,,,,,,,,
+Imaging tests,,,,,,,,,,,,
+19,"Deploy a study using automapped NBIA images
+",Passed,,,,,,,,,,
+20,Deploy a study with image annotations using images mapped by subject.,Passed,,H:\remb_allsamples_singlecolumn.csv,,H:\rembrandt_image_mapping_c.csv,H:\rembrandt_image_annotations_b.csv,,,,,
+21,"Deploy a study using series mapped NBIA images
+",Passed,,H:\tcga060118imageseries_clinical.csv,,H:\tcga060118imageseries_mapping_b.csv,,,,,,
+22,"Retreive DICOM images
+",Passed,,,,,,,,,,
+Deployment tests,,,,,,,,,,,,
+23,Attempt to load clinical file with duplicate identifiers,Passed,,H:\duplicatesubjects_clinical.csv,,,,,,,,
+24,"Edit study log
+",Passed,,,,,,,,,,
+25,Deploy a study using caDSR annotation definitions loaded in group file,Passed,,H:\caDSR_GBM_062011_patient_d.csv,H:\caDSRgbm_patient_group_d.csv,,,,,,,
+26,Deploy a study using an annotation definition from a previous study,Passed,,,,,,,,,,
+27,Deploy a study using a caDSR annotation definition found by search,Passed,,,,,,,,,,
+28,Add a logo to a deployed study,Passed,,,,,L:\QA\schaefer\TCGAmappingfiles\tcga_logo_8.JPG,,,,,
+29,Add links to a deployed study,Passed,,,,,H:\TCGA_GBM_links_012312,,,,,
+30,"Deploy a study applying the numeric range
+",Passed,,,,,,,,,,
+31,Deploy a study using the maximum number mask,Passed,,,,,,,,,,
+32,Attempt to load a private caArray data source with a bad password,Passed,,,,,,,,,,
+33,Attempt to load a caArray data source with a bad experiment number,Passed,,,,,,,,,,
+34,"Configure survival definitions and create KM plot
+
+",Passed,,,,,,,,,,
+35,"Attempt to erroneously set string annotation as numeric
+",Passed,,,,,,,,,,
+36,"Attempt to erroneously set string annotation as date
+",Passed,,,,,,,,,,
+37,Copy and deploy a study,Passed,,,,,,,,,,
+38,Disable a study and confirm it is removed from dropdown,Passed,,,,,,,,,,
+Query tests,,,,,,,,,,,,
+39,Query study in test case #12 and compare to previous results,Passed,,,,,L:\NCICB\QA\schaefer\tcgagbm10subjecttestresults_071212.xls,,,,,
+40,"Launch heatmap
+",Passed,,,,,,,,,,
+41,"Launch IGV with annotations, expression and CN
+",Passed,,,,,,,,,,
+42,"Launch IGV to display CGHcall results
+",Passed,,,,,,,,,,
+43,"Run GISTIC grid
+",Passed,,,,,,,,,,
+44,"Run CMS grid
+",Passed,,,,,,,,,,
+45,"Run PCA grid
+",Passed,,,,,,,,,,
+46,"Run GenePattern Modules that require both platform and annotation data (CARTXValidation, KNNXValidation)",Passed,,,,,,,,,,
+47,Save a gene list and use it,Passed,,,,,H:\3genelist.csv,,,,,
+48,"Save a subject list and use it
+",Passed,,,,,H:\5tcgagbmsubjectlist,,,,,
+49,"Export results to excel
+",Passed,,,,,,,,,,
+50,"Query annotations and sort the results
+",Passed,,,,,,,,,,
+51,"Launch users guide
+",Passed,,,,,,,,,,
+52,"Launch support page
+",Passed,,,,,,,,,,
+53,"Query using caBIO
+",Passed,,,,,,,,,,
+54,Attempt to save a duplicate study name,Passed,,,,,,,,,,
+55,Attempt to save a duplicate list name,Passed,,,,,,,,,,
+56,Attempt to save a duplicate query name,Passed,,,,,,,,,,
+UPT and login tests,,,,,,,,,,,,
+57,"Install UPT, create new users and login",Passed,,,,,,,,,,
+58,"Log in as admin
+",Passed,,,,,,,,,,
+59,"Log in as manag and  be restricted from platforms
+",Passed,,,,,,,,,,
+60,"Log in as inves and be restricted from platforms and studies
+",Passed,,,,,,,,,,
+61,"Submit a registration request
+",Passed,,,,,,,,,,
+62,Query a study when not logged in,Failed,See CAINT-1214,,,,,,,,,
+Role based permission tests,,,,,,,,,,,,
+63,Attempt to query restricted annotations,Passed,,,,,,,,,,
+64,Attempt to query restricted genomic data,Passed,,,,,,,,,,
+65,Attempt to query restricted subjects,Passed,,,,,,,,,,
+66,Attempt to query restricted annotations in KM plot,Passed,,,,,,,,,,
+67,Attempt to query restricted genomic data in KM plot,Passed,,,,,,,,,,
+68,Attempt to query restricted subjects in KM plot,Passed,,,,,,,,,,
+69,Attempt to query restricted annotations in gene expression plot,Passed,,,,,,,,,,
+70,Attempt to query restricted genomic data in gene expression plot,Passed,,,,,,,,,,
+71,Attempt to query restricted subjects in gene expression plot,Passed,,,,,,,,,,
+72,Attempt to query restricted annotations in IGV,Passed,,,,,,,,,,
+73,Attempt to query restricted genomic data in IGV,Passed,,,,,,,,,,
+74,Attempt to query restricted subjects in IGV,Passed,,,,,,,,,,
+75,Attempt to query restricted annotations in heatmap,Passed,,,,,,,,,,
+76,Attempt to query restricted genomic data in heatmap,Passed,,,,,,,,,,
+77,Attempt to query restricted subjects in heatmap,Passed,,,,,,,,,,
+78,Attempt to query restricted annotations in GenePattern,Passed,"The GenePattern expression data analysis workflows were tested and found to be secure. Attempting to analyze unauthorized expression data using grid services results in Local Error Unable to create GCT file: No data found from selection. Analyzing authorized expression data using grid services properly restricts by subject. Attempting to analyze unauthorized expression data using GenePattern modules displays a status of completed in caIntegrator but correctly shows an error in GenePattern. Analyzing authorized expression data using GenePattern modules correctly restricts by annotation, displaying Local Error Couldn't execute GenePattern analysis job: null, and correctly restricts by subject.",,,,,,,,,
+79,Attempt to query restricted genomic data in GenePattern,Passed,"The GenePattern expression data analysis workflows were tested and found to be secure. Attempting to analyze unauthorized expression data using grid services results in Local Error Unable to create GCT file: No data found from selection. Analyzing authorized expression data using grid services properly restricts by subject. Attempting to analyze unauthorized expression data using GenePattern modules displays a status of completed in caIntegrator but correctly shows an error in GenePattern. Analyzing authorized expression data using GenePattern modules correctly restricts by annotation, displaying Local Error Couldn't execute GenePattern analysis job: null, and correctly restricts by subject.",,,,,,,,,
+80,Attempt to query restricted subjects in GenePattern,Passed,"The GenePattern expression data analysis workflows were tested and found to be secure. Attempting to analyze unauthorized expression data using grid services results in Local Error Unable to create GCT file: No data found from selection. Analyzing authorized expression data using grid services properly restricts by subject. Attempting to analyze unauthorized expression data using GenePattern modules displays a status of completed in caIntegrator but correctly shows an error in GenePattern. Analyzing authorized expression data using GenePattern modules correctly restricts by annotation, displaying Local Error Couldn't execute GenePattern analysis job: null, and correctly restricts by subject.",,,,,,,,,
+SSO tests,,,,,,,,,,,,
+81,Login with SSO in caIntegrator and navigate to caArray,Passed,,,,,,,,,,
+82,Login with SSO in caArray and navigate to caIntegrator,Passed,,,,,,,,,,
+83,Deploy a study with caArray data and navigate to the caArray experiment from the welcome page,Passed,,,,,,,,,,
+Installation tests,,,,,,,,,,,,
+84,Full installation on Windows using GUI,Failed,See CAINT-1209,,,,,,,,,
+85,Full installation on linus using command line,Passed,,,,,,,,,,
+86,Upgrade on Windows using GUI,Failed,See CAINT-1209,,,,,,,,,
+87,Upgrade on linux using command line,Passed,,,,,,,,,,
