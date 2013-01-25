@@ -1,4 +1,4 @@
-Welcome to the caIntegrator2 Project!
+Welcome to the caIntegrator Project!
 ==============================
 
 caIntegrator2 is a web-based software application that allows researchers to set up custom, 
@@ -14,8 +14,7 @@ You will find more details about caIntegrator2 in the following links:
  * Code Repository: http://github.com/NCIP/caintegrator2-data
  * Issue Tracker: https://tracker.nci.nih.gov/browse/CAINT
  * Documentation:https://wiki.nci.nih.gov/display/caIntegrator/caIntegrator+Documentation
- * Mailing List: TBA
- * NCI OSDI: https://wiki.nci.nih.gov/display/caBIGCommunityCode/CBIIT+Open+Source+Development+Initiative
-
+ 
+ 
 
 Please join us in further developing and improving caIntegrator2.
